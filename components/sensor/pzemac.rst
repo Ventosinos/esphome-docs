@@ -155,6 +155,45 @@ You must set the ``address`` of the ``modbus_controller`` to the current address
         update_interval: 30s
 
 
+Simple setup
+------------
+A simple setup could be archieved with a few components:
+- A wall plug (5V DC)
+- A USB cable
+- An ESP8266 S1 (The simplest and cheapest ESP device)
+- A 3V3 voltage regulator like the MCP1700 (Please choose TO-92, other formats are really small for welding)
+- A PZEM-004T-V3
+
+.. note::
+
+    You can replace the ESP8266 and the voltage regulator with an ESP32 (Wich has an inner voltage regulator).
+
+Wiring
+******
+.. figure:: images/PZEM-004T_V3_Wiring.png
+    :align: center
+    :width: 80.0%
+
+    Wiring for ESP8266-S1.
+
+.. figure:: images/PZEM-004T_V3_Wiring_ESP32.png
+    :align: center
+    :width: 80.0%
+
+    Wiring for generic ESP32 with 5V pin.
+
+.. note::
+
+    RX and TX pins must be reversed. This is not a typo, otherwise they wont work.
+
+Output
+******
+.. figure:: images/PZEM-004T_V3_Output.png
+    :align: center
+    :width: 80.0%
+
+
+
 See Also
 --------
 
